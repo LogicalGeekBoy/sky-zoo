@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:spawner"
+        },
+        "title": {
+            "text": "Sky Zoo",
+            "bold": true,
+            "color": "gold"
+        },
+        "description": {
+            "text": "Capture mobs by naming them 'Captured'",
+            "color": "white",
+            "bold": false,
+            "italic": true
+        },
+        "background": "minecraft:textures/block/cobblestone.png",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "frame": "challenge"
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

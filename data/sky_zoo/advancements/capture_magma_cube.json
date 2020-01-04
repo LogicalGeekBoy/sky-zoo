@@ -1,0 +1,34 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head"
+            
+                , "nbt": "{SkullOwner:{Id:'9ea502a1-cbc6-4ae7-885f-edeccad7696d',Name:'Magma Cube',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzg5NTdkNTAyM2M5MzdjNGM0MWFhMjQxMmQ0MzQxMGJkYTIzY2Y3OWE5ZjZhYjM2Yjc2ZmVmMmQ3YzQyOSJ9fX0='}]}}}"
+            
+        },
+        "title": {
+            "text": "Capture Magma Cube",
+            "color": "white",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "Unlock the Magma Block trade",
+            "color": "green",
+            "bold": false,
+            "italic": true
+        },
+        "show_toast": true,
+        "announce_to_chat": false,
+        "frame": "goal"
+    },
+    "parent": "sky_zoo:root",
+    "criteria": {
+        "capture": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "sky_zoo:rewards/magma_cube_reward"
+    }
+}

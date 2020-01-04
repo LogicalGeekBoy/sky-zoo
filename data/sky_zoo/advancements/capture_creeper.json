@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:creeper_head"
+            
+        },
+        "title": {
+            "text": "Capture Creeper",
+            "color": "white",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "Unlock the TNT trade",
+            "color": "green",
+            "bold": false,
+            "italic": true
+        },
+        "show_toast": true,
+        "announce_to_chat": false,
+        "frame": "goal"
+    },
+    "parent": "sky_zoo:root",
+    "criteria": {
+        "capture": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "sky_zoo:rewards/creeper_reward"
+    }
+}

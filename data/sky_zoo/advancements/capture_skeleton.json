@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:skeleton_skull"
+            
+        },
+        "title": {
+            "text": "Capture Skeleton",
+            "color": "white",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "Unlock the Name Tag trade",
+            "color": "green",
+            "bold": false,
+            "italic": true
+        },
+        "show_toast": true,
+        "announce_to_chat": false,
+        "frame": "goal"
+    },
+    "parent": "sky_zoo:root",
+    "criteria": {
+        "capture": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "sky_zoo:rewards/skeleton_reward"
+    }
+}
