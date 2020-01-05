@@ -36,4 +36,3 @@ Once all the mobs have been caught and you have finished your zoo, the map is co
     * Add book with instructions (add to setup)
     * Change/remove items on map to make reward trades more valuable (separte command to change the world)
 * Add build script to zip up correct files for datapack
-* Add licence
