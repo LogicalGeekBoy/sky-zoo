@@ -1,3 +1,5 @@
+require "securerandom"
+
 class Mob
   def initialize(row)
     @row = row
@@ -43,6 +45,10 @@ class Mob
 
   def nbt
     field(:nbt)
+  end
+
+  def dimension
+    field(:dimension)
   end
 
   def id

@@ -3,7 +3,7 @@
         "icon": {
             "item": "minecraft:player_head"
             
-                , "nbt": "{SkullOwner:{Id:'e2a21d37-9b83-4954-950b-c541e31d29c0',Name:'Enderman',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E1OWJiMGE3YTMyOTY1YjNkOTBkOGVhZmE4OTlkMTgzNWY0MjQ1MDllYWRkNGU2YjcwOWFkYTUwYjljZiJ9fX0='}]}}}"
+                , "nbt": "{SkullOwner:{Id:'30832397-4c65-468e-bedf-57da4ed69fa9',Name:'Enderman',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E1OWJiMGE3YTMyOTY1YjNkOTBkOGVhZmE4OTlkMTgzNWY0MjQ1MDllYWRkNGU2YjcwOWFkYTUwYjljZiJ9fX0='}]}}}"
             
         },
         "title": {
@@ -20,9 +20,10 @@
         },
         "show_toast": true,
         "announce_to_chat": false,
-        "frame": "goal"
+        "frame": "task",
+        "hidden": "false"
     },
-    "parent": "sky_zoo:root",
+    "parent": "sky_zoo:end_mobs",
     "criteria": {
         "capture": {
             "trigger": "minecraft:impossible"

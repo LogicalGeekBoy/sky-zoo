@@ -21,7 +21,7 @@ To capture a mob, simply enclose them somewhere and then name them with a name t
 The tab screen tracks player deaths which you can use as an extra challenge. Try completing the map with less than 10 deaths
 across all players. This is optional, the datapack doesn't enforce limited lives.
 
-Once all the mobs have been caught and you have finished your zoo, the map is complete.
+Once all the mobs have been caught and you have finished your zoo, the map is complete and you'll see a congratulations message.
 
 ## How to change the mob capture list and their rewards
 
@@ -32,7 +32,6 @@ Once all the mobs have been caught and you have finished your zoo, the map is co
 
 ## TODO
 
-* When all advancements made, should we do something?
 * Apply glowing to the zookeeper at night
 * Review rewards and costs for new map (other rewards rather than trades? A book to skip day? Control the weather? etc)
 * Map changes:

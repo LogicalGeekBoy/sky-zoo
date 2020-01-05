@@ -1,27 +1,27 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:name_tag"
+            "item": "minecraft:end_stone"
         },
         "title": {
-            "text": "Sky Zoo",
+            "text": "End Mobs",
             "bold": true,
             "color": "gold"
         },
         "description": {
-            "text": "Capture mobs by naming them 'Captured'",
+            "text": "Capture mobs from the End",
             "color": "white",
             "bold": false,
             "italic": true
         },
-        "background": "minecraft:textures/block/cobblestone.png",
         "show_toast": false,
         "announce_to_chat": false,
         "frame": "goal"
     },
+    "parent": "sky_zoo:root",
     "criteria": {
         "tick": {
-            "trigger": "minecraft:tick"
+            "trigger": "minecraft:impossible"
         }
     }
 }

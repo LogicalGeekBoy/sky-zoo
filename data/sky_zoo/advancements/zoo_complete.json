@@ -1,33 +1,31 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:zombie_head"
-            
+            "item": "minecraft:name_tag"
         },
         "title": {
-            "text": "Capture Zombie",
+            "text": "Complete the Zoo",
             "color": "white",
             "bold": false,
             "italic": false
         },
         "description": {
-            "text": "Unlock the Water Bucket trade",
+            "text": "Capture all mobs and complete your Sky Zoo",
             "color": "green",
             "bold": false,
             "italic": true
         },
         "show_toast": true,
         "announce_to_chat": false,
-        "frame": "task",
-        "hidden": "false"
+        "hidden": "true"
     },
-    "parent": "sky_zoo:overworld_mobs",
+    "parent": "sky_zoo:root",
     "criteria": {
         "capture": {
             "trigger": "minecraft:impossible"
         }
     },
     "rewards": {
-        "function": "sky_zoo:rewards/zombie_reward"
+        "function": "sky_zoo:zoo_complete"
     }
 }
