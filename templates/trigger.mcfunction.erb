@@ -1,1 +1,1 @@
-execute as @e[type=minecraft:<%= minecraft_id %>,name=Captured,nbt={<%= nbt %>}] run advancement grant @a[advancements={sky_zoo:capture_<%= id %>=false}] only sky_zoo:capture_<%= id %>
+execute as @e[type=minecraft:<%= minecraft_id %>,name=Captured,nbt={<%= nbt %>}] <%= conditional %>run advancement grant @a[advancements={sky_zoo:capture_<%= id %>=false}] only sky_zoo:capture_<%= id %>

@@ -7,10 +7,6 @@
 3. Zip up the pack and place in your MC world
 4. Run `/reload` and then `/function sky_zoo:setup`
 
-## Known Issues
-
-* Capturing a charged creeper before a creeper will award both trades
-
 ## TODO
 
 * When all advancements made, should we do something?
