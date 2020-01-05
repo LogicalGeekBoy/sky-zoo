@@ -28,15 +28,12 @@ Once all the mobs have been caught and you have finished your zoo, the map is co
 1. Edit `mobs.csv` to add new mobs, change existing trades or remove mobs from the capture list.
 2. Regenerate Minecraft functions, advancements and zip the pack up with `ruby .\generate.rb`.
 3. Copy `./build/sky-zoo.zip` and place in the `datapacks` folder your Minecraft world.
-4. Run `/reload` and then `/function sky_zoo:setup` which will summon the Zookeeper where you are standing.
+4. Run `/reload` and then `/function sky_zoo:setup` which will summon the Zookeeper where you are standing and give you an instructions book and first name tag.
 
 ## TODO
 
 * Apply glowing to the zookeeper at night
 * Review rewards and costs for new map (other rewards rather than trades? A book to skip day? Control the weather? etc)
-* Map changes:
-    * Add book with instructions (add to setup)
-    * Change/remove items on map to make reward trades more valuable (separte command to change the world)
 
 ## Development Requirements
 
