@@ -26,8 +26,8 @@ Once all the mobs have been caught and you have finished your zoo, the map is co
 ## How to change the mob capture list and their rewards
 
 1. Edit `mobs.csv` to add new mobs, change existing trades or remove mobs from the capture list.
-2. Regenerate Minecraft functions and advancements with `ruby .\generate.rb`.
-3. Zip up the pack and place in the `datapacks` folder your Minecraft world.
+2. Regenerate Minecraft functions, advancements and zip the pack up with `ruby .\generate.rb`.
+3. Copy `./build/sky-zoo.zip` and place in the `datapacks` folder your Minecraft world.
 4. Run `/reload` and then `/function sky_zoo:setup` which will summon the Zookeeper where you are standing.
 
 ## TODO
@@ -38,4 +38,8 @@ Once all the mobs have been caught and you have finished your zoo, the map is co
 * Map changes:
     * Add book with instructions (add to setup)
     * Change/remove items on map to make reward trades more valuable (separte command to change the world)
-* Add build script to zip up correct files for datapack
+
+## Development Requirements
+
+* Install Ruby 2.6+
+* Install the Rubyzip gem with `gem install rubyzip`
