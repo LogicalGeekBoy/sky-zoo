@@ -25,4 +25,10 @@ execute as @e[type=minecraft:wither_skeleton,name=Captured,nbt={}] run advanceme
 execute as @e[type=minecraft:zombie,name=Captured,nbt={}] run advancement grant @a[advancements={sky_zoo:capture_zombie=false}] only sky_zoo:capture_zombie
 execute as @e[type=minecraft:zombie_pigman,name=Captured,nbt={}] run advancement grant @a[advancements={sky_zoo:capture_zombie_pigman=false}] only sky_zoo:capture_zombie_pigman
 execute as @e[type=minecraft:zombie_villager,name=Captured,nbt={}] run advancement grant @a[advancements={sky_zoo:capture_zombie_villager=false}] only sky_zoo:capture_zombie_villager
+
+# Grant the zoo complete advancement if all mobs captured
 advancement grant @a[advancements={sky_zoo:zoo_complete=false,sky_zoo:capture_blaze=true,sky_zoo:capture_charged_creeper=true,sky_zoo:capture_creeper=true,sky_zoo:capture_drowned=true,sky_zoo:capture_elder_guardian=true,sky_zoo:capture_enderman=true,sky_zoo:capture_endermite=true,sky_zoo:capture_evoker=true,sky_zoo:capture_ghast=true,sky_zoo:capture_guardian=true,sky_zoo:capture_husk=true,sky_zoo:capture_magma_cube=true,sky_zoo:capture_phantom=true,sky_zoo:capture_pillager=true,sky_zoo:capture_ravager=true,sky_zoo:capture_shulker=true,sky_zoo:capture_skeleton=true,sky_zoo:capture_slime=true,sky_zoo:capture_spider=true,sky_zoo:capture_stray=true,sky_zoo:capture_vindicator=true,sky_zoo:capture_witch=true,sky_zoo:capture_wither=true,sky_zoo:capture_wither_skeleton=true,sky_zoo:capture_zombie=true,sky_zoo:capture_zombie_pigman=true,sky_zoo:capture_zombie_villager=true}] only sky_zoo:zoo_complete
+
+# Give the zookeeper glowing effect at night
+execute store result score @a sky_zoo_time run time query daytime
+execute as @a if score @s sky_zoo_time matches 12560..23485 run effect give @e[type=wandering_trader,name=Zookeeper,limit=1] minecraft:glowing 1 0 true

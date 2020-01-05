@@ -32,7 +32,6 @@ Once all the mobs have been caught and you have finished your zoo, the map is co
 
 ## TODO
 
-* Apply glowing to the zookeeper at night
 * Review rewards and costs for new map (other rewards rather than trades? A book to skip day? Control the weather? etc)
 
 ## Development Requirements

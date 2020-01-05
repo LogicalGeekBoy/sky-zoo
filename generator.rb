@@ -11,7 +11,7 @@ class Generator
     @reward_renderer = ERB.new(File.read("./templates/reward.mcfunction.erb"))
     @trigger_renderer = ERB.new(File.read("./templates/trigger.mcfunction.erb"))
     @trade_renderer = ERB.new(File.read("./templates/trade.mcfunction.erb"))
-    @zoo_complete_renderer = ERB.new(File.read("./templates/zoo_complete.mcfunction.erb"))
+    @clock_renderer = ERB.new(File.read("./templates/clock.mcfunction.erb"))
   end
 
   def generate
@@ -22,7 +22,7 @@ class Generator
 
   private
 
-  attr_reader :advancement_renderer, :reward_renderer, :trigger_renderer, :trade_renderer, :zoo_complete_renderer
+  attr_reader :advancement_renderer, :reward_renderer, :trigger_renderer, :trade_renderer, :clock_renderer
 
   def generate_pack
     open_files do |clock_file, trades_file|
@@ -44,12 +44,12 @@ class Generator
       trades_file.puts(trade)
     end
 
-    write_zoo_complete_trigger(clock_file)
+    write_clock_commands(clock_file)
   end
 
-  def write_zoo_complete_trigger(clock_file)
-    trigger = mobs.render(zoo_complete_renderer)
-    clock_file.puts(trigger)
+  def write_clock_commands(clock_file)
+    commands = mobs.render(clock_renderer)
+    clock_file.puts(commands)
   end
 
   def open_files
