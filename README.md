@@ -23,9 +23,9 @@ across all players. This is optional, the datapack doesn't enforce limited lives
 
 Once all the mobs have been caught and you have finished your zoo, the map is complete.
 
-## How to change the rewards for capturing a mob
+## How to change the mob capture list and their rewards
 
-1. Edit `mobs.csv` to add new mobs or change the zookeeper trades.
+1. Edit `mobs.csv` to add new mobs, change existing trades or remove mobs from the capture list.
 2. Regenerate Minecraft functions and advancements with `ruby .\generate.rb`.
 3. Zip up the pack and place in the `datapacks` folder your Minecraft world.
 4. Run `/reload` and then `/function sky_zoo:setup` which will summon the Zookeeper where you are standing.

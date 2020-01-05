@@ -1,6 +1,7 @@
 require "erb"
 require "csv"
 require "securerandom"
+require "fileutils"
 require "./mob"
 
 advancement_renderer = ERB.new(File.read("./templates/advancement.json.erb"))
@@ -14,6 +15,9 @@ end
 
 clock_file = File.open("./data/sky_zoo/functions/clock.mcfunction", "w")
 trades_file = File.open("./data/sky_zoo/functions/zookeeper_trades.mcfunction", "w")
+
+FileUtils.rm(Dir.glob("./data/sky_zoo/advancements/capture_*.json"))
+FileUtils.rm(Dir.glob("./data/sky_zoo/functions/rewards/*_reward.mcfunction"))
 
 mobs.sort_by(&:name).each_with_index do |mob, index|
   advancement = mob.render(index, advancement_renderer)
