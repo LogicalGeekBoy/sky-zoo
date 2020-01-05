@@ -39,12 +39,6 @@ class Mob
     field(:trade_sell_amount)
   end
 
-  def trade_sell_name
-    return "Captured" if trade_sell_item == "name_tag"
-
-    trade
-  end
-
   def minecraft_id
     field(:id)
   end
