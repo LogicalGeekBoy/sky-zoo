@@ -18,6 +18,9 @@ tab where all the mobs are listed together with the reward you get for capturing
 
 To capture a mob, simply enclose them somewhere and then name them with a name tag as `Captured` (exactly with matching case).
 
+The tab screen tracks player deaths which you can use as an extra challenge. Try completing the map with less than 10 deaths
+across all players. This is optional, the datapack doesn't enforce limited lives.
+
 Once all the mobs have been caught and you have finished your zoo, the map is complete.
 
 ## How to change the rewards for capturing a mob
