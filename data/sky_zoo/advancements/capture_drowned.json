@@ -3,7 +3,7 @@
         "icon": {
             "item": "minecraft:player_head"
             
-                , "nbt": "{SkullOwner:{Id:'1c26358f-c7c0-46c4-ae94-0d2ecfcd2a50',Name:'Drowned',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNmN2NjZjYxZGJjM2Y5ZmU5YTYzMzNjZGUwYzBlMTQzOTllYjJlZWE3MWQzNGNmMjIzYjNhY2UyMjA1MSJ9fX0='}]}}}"
+                , "nbt": "{SkullOwner:{Id:'444654f8-57c2-44ee-8e25-4bcf900d53de',Name:'Drowned',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNmN2NjZjYxZGJjM2Y5ZmU5YTYzMzNjZGUwYzBlMTQzOTllYjJlZWE3MWQzNGNmMjIzYjNhY2UyMjA1MSJ9fX0='}]}}}"
             
         },
         "title": {
@@ -13,7 +13,7 @@
             "italic": false
         },
         "description": {
-            "text": "Unlock the Sugar Cane trade",
+            "text": "Unlock the Enchanting Table trade",
             "color": "green",
             "bold": false,
             "italic": true

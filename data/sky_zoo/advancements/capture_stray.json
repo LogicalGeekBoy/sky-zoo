@@ -3,7 +3,7 @@
         "icon": {
             "item": "minecraft:player_head"
             
-                , "nbt": "{SkullOwner:{Id:'e0b73dc4-630a-4365-8503-390681adeeed',Name:'Stray',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzhkZGY3NmU1NTVkZDVjNGFhOGEwYTVmYzU4NDUyMGNkNjNkNDg5YzI1M2RlOTY5ZjdmMjJmODVhOWEyZDU2In19fQ=='}]}}}"
+                , "nbt": "{SkullOwner:{Id:'36818710-59c3-4124-bf98-3555c8363a46',Name:'Stray',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzhkZGY3NmU1NTVkZDVjNGFhOGEwYTVmYzU4NDUyMGNkNjNkNDg5YzI1M2RlOTY5ZjdmMjJmODVhOWEyZDU2In19fQ=='}]}}}"
             
         },
         "title": {

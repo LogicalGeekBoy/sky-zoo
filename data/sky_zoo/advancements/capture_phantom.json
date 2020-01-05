@@ -3,7 +3,7 @@
         "icon": {
             "item": "minecraft:player_head"
             
-                , "nbt": "{SkullOwner:{Id:'5f0c4089-69d4-4006-823c-467af01fa3b8',Name:'Phantom',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2U5NTE1M2VjMjMyODRiMjgzZjAwZDE5ZDI5NzU2ZjI0NDMxM2EwNjFiNzBhYzAzYjk3ZDIzNmVlNTdiZDk4MiJ9fX0='}]}}}"
+                , "nbt": "{SkullOwner:{Id:'47e4ce43-db53-45d1-b641-e988f16cf5cc',Name:'Phantom',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2U5NTE1M2VjMjMyODRiMjgzZjAwZDE5ZDI5NzU2ZjI0NDMxM2EwNjFiNzBhYzAzYjk3ZDIzNmVlNTdiZDk4MiJ9fX0='}]}}}"
             
         },
         "title": {
@@ -13,7 +13,7 @@
             "italic": false
         },
         "description": {
-            "text": "Unlock the Anvil trade",
+            "text": "Unlock the Lapis Lazuli trade",
             "color": "green",
             "bold": false,
             "italic": true
