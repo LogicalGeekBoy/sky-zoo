@@ -30,10 +30,6 @@ Once all the mobs have been caught and you have finished your zoo, the map is co
 3. Copy `./build/sky-zoo.zip` and place in the `datapacks` folder your Minecraft world.
 4. Run `/reload` and then `/function sky_zoo:setup` which will summon the Zookeeper where you are standing and give you an instructions book and first name tag.
 
-## TODO
-
-* Review rewards and costs for new map (other rewards rather than trades? A book to skip day? Control the weather? etc)
-
 ## Development Requirements
 
 * Install Ruby 2.6+
