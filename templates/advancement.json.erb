@@ -3,7 +3,7 @@
         "icon": {
             "item": "minecraft:<%= icon %>"
             <% if custom_mob_head? %>
-                , "nbt": "{SkullOwner:{Id:'<%= owner_id %>',Name:'<%= name %>',Properties:{textures:[{Value:'<%= texture %>'}]}}}"
+                , "nbt": "{SkullOwner:{Id:'<%= id %>',Name:'<%= name %>',Properties:{textures:[{Value:'<%= texture %>'}]}}}"
             <% end %>
         },
         "title": {

@@ -67,10 +67,6 @@ class Mob
     trade_sell_item.split("_").map(&:capitalize).join(" ")
   end
 
-  def owner_id
-    SecureRandom.uuid
-  end
-
   def custom_mob_head?
     icon == "player_head"
   end

@@ -1,2 +1,2 @@
-data modify entity @e[type=wandering_trader,name=Zookeeper,limit=1] Offers.Recipes[<%= index %>].maxUses set value <%= max_uses %>
-execute as @e[type=wandering_trader,name=Zookeeper,limit=1] run give @p minecraft:<%= trade_sell_item %> <%= trade_sell_amount %>
+data modify entity @e[type=wandering_trader,limit=1] Offers.Recipes[<%= index %>].maxUses set value <%= max_uses %>
+execute as @e[type=wandering_trader,limit=1] run give @p minecraft:<%= trade_sell_item %> <%= trade_sell_amount %>
