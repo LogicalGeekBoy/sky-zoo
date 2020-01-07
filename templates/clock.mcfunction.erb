@@ -2,6 +2,5 @@
 # Grant the zoo complete advancement if all mobs captured
 advancement grant @a[advancements={sky_zoo:zoo_complete=false,<%= all_advancement_conditions %>}] only sky_zoo:zoo_complete
 
-# Give the zookeeper glowing effect at night
-execute store result score @a sky_zoo_time run time query daytime
-execute as @a if score @s sky_zoo_time matches 12560..23485 run effect give @e[type=wandering_trader,limit=1] minecraft:glowing 1 0 true
+# Give the zookeeper glowing effect at night (effect id 14 is invisibility)
+effect give @e[type=minecraft:wandering_trader,limit=1,nbt={ActiveEffects:[{Id:14b}]}] minecraft:glowing 1 0 true

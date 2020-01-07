@@ -1,8 +1,6 @@
 advancement revoke @a from sky_zoo:root
-scoreboard objectives remove sky_zoo_time
 scoreboard objectives remove sky_zoo_deaths
 
-scoreboard objectives add sky_zoo_time dummy
 scoreboard objectives add sky_zoo_deaths deathCount "Deaths"
 scoreboard objectives setdisplay list sky_zoo_deaths
 
