@@ -1,13 +1,11 @@
 # Sky Zoo Datapack
 
-Sky Zoo is a set of additional advancements based on capturing hostile mobs in Minecraft Java Edition 1.15.1+. It's
+Sky Zoo is a set of additional advancements based on capturing hostile mobs in Minecraft Java Edition 1.15.2+. It's
 designed to be played on a skyblock map either in single player or together with friends. Currently, the datapack is
 designed to to played on DrTrog's Skyblock 4 map but it can played on any map (doesn't even need to be a skyblock
 map). You can downlaod the recommended skyblock map from here:
 
 https://www.planetminecraft.com/project/skyblock-4/
-
-We are currently targeting version 4.07.1 of this map.
 
 Sky Zoo also features a Zookeeper (wandering trader) that has various special trades which are all locked at the start
 of the game. As you capture mobs, these trades are unlocked for you to use as a reward. When you capture a mob, you will
@@ -22,6 +20,14 @@ The tab screen tracks player deaths which you can use as an extra challenge. Try
 across all players. This is optional, the datapack doesn't enforce limited lives.
 
 Once all the mobs have been caught and you have finished your zoo, the map is complete and you'll see a congratulations message.
+
+## How to install Sky Zoo
+
+1. Download the [datapack zip file](https://github.com/LogicalGeekBoy/sky-zoo/raw/master/build/sky-zoo.zip)
+2. Go to your Minecraft world folder and place the datapack zip file inside the `datapacks` folder.
+3. Start Minecraft and run `/reload`
+4. Stand where you'd like the Zookeeper to appear
+5. Run `/function sky_zoo:setup`
 
 ## How to change the mob capture list and their rewards
 
