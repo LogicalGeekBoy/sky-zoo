@@ -1,2 +1,2 @@
 data modify entity @e[type=wandering_trader,limit=1] Offers.Recipes[25].maxUses set value 99999
-execute as @e[type=wandering_trader,limit=1] run give @p minecraft:nether_bricks 32
+execute as @e[type=wandering_trader,limit=1] run give @p minecraft:bell 1
