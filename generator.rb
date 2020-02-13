@@ -12,6 +12,7 @@ class Generator
     @trigger_renderer = ERB.new(File.read("./templates/trigger.mcfunction.erb"))
     @trade_renderer = ERB.new(File.read("./templates/trade.mcfunction.erb"))
     @clock_renderer = ERB.new(File.read("./templates/clock.mcfunction.erb"))
+    @remove_reward_renderer = ERB.new(File.read("./templates/remove_reward.mcfunction.erb"))
   end
 
   def generate
@@ -22,26 +23,28 @@ class Generator
 
   private
 
-  attr_reader :advancement_renderer, :reward_renderer, :trigger_renderer, :trade_renderer, :clock_renderer
+  attr_reader :advancement_renderer, :reward_renderer, :trigger_renderer, :trade_renderer, :clock_renderer, :remove_reward_renderer
 
   def generate_pack
-    open_files do |clock_file, trades_file|
-      generate_files(clock_file, trades_file)
+    open_files do |clock_file, trades_file, remove_rewards_file|
+      generate_files(clock_file, trades_file, remove_rewards_file)
     end
   end
 
-  def generate_files(clock_file, trades_file)
+  def generate_files(clock_file, trades_file, remove_rewards_file)
     mobs.each_with_index do |mob, index|
       advancement = mob.render(index, advancement_renderer)
       reward = mob.render(index, reward_renderer)
       trigger = mob.render(index, trigger_renderer)
       trade = mob.render(index, trade_renderer)
+      remove_reward = mob.render(index, remove_reward_renderer)
 
       File.write("./data/sky_zoo/advancements/capture_#{mob.id}.json", advancement)
       File.write("./data/sky_zoo/functions/rewards/#{mob.id}_reward.mcfunction", reward)
 
       clock_file.puts(trigger)
       trades_file.puts(trade)
+      remove_rewards_file.puts(remove_reward)
     end
 
     write_clock_commands(clock_file)
@@ -55,11 +58,13 @@ class Generator
   def open_files
     clock_file = File.open("./data/sky_zoo/functions/clock.mcfunction", "w")
     trades_file = File.open("./data/sky_zoo/functions/zookeeper_trades.mcfunction", "w")
+    remove_rewards_file = File.open("./data/sky_zoo/functions/remove_rewards.mcfunction", "w")
 
-    yield(clock_file, trades_file)
+    yield(clock_file, trades_file, remove_rewards_file)
 
     clock_file.close
     trades_file.close
+    remove_rewards_file.close
   end
 
   def mobs

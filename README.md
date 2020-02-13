@@ -9,7 +9,7 @@ https://www.planetminecraft.com/project/skyblock-4/
 
 Sky Zoo also features a Zookeeper (wandering trader) that has various special trades which are all locked at the start
 of the game. As you capture mobs, these trades are unlocked for you to use as a reward. When you capture a mob, you will
-also be given one set of items for free.
+also be given one set of items for free. These free items will be dropped at the Zookeeper's feet.
 
 You can review which mobs need to be captured by viewing the Zookeeper's trades or by looking at the Sky Zoo advancements
 tab where all the mobs are listed together with the reward you get for capturing them.
@@ -29,6 +29,17 @@ Once all the mobs have been caught and you have finished your zoo, the map is co
 4. Stand where you'd like the Zookeeper to appear
 5. Run `/function sky_zoo:setup`
 6. The Zookeeper will spawn and you'll be given an instructions book and two name tags to get you started.
+
+## What happens if the Zookeeper dies?
+
+The Zookeeper is invulnerable which means they cannot take damage from mobs or players. However, if the Zookeeper falls off of
+an island into the void they will die. You can respawn the Zookeeper without affecting the your progress using:
+
+```
+/function sky_zoo:spawn_zookeeper
+```
+
+You shouldn't use `/function sky_zoo:setup` as this will reset everything again.
 
 ## How to change the mob capture list and their rewards
 

@@ -1,2 +1,3 @@
 data modify entity @e[type=wandering_trader,limit=1] Offers.Recipes[<%= index %>].maxUses set value <%= max_uses %>
-execute as @e[type=wandering_trader,limit=1] run give @p minecraft:<%= trade_sell_item %> <%= trade_sell_amount %>
+execute at @e[type=wandering_trader,limit=1] unless data storage sky_zoo <%= id %>_reward run summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:<%= trade_sell_item %>",Count:<%= trade_sell_amount %>b}}
+data modify storage sky_zoo <%= id %>_reward set value 1
