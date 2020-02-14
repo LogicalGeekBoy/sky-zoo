@@ -1,3 +1,5 @@
+gamerule sendCommandFeedback false
+
 advancement revoke @a from sky_zoo:root
 scoreboard objectives remove sky_zoo_deaths
 function sky_zoo:remove_rewards
