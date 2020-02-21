@@ -2,6 +2,8 @@
 
 A Minecraft datapack created by LogicalGeekBoy, checkout my YouTube channel: http://youtube.com/logicalgeekboy
 
+Here's a video on my channel showing my initial progress playing the map and instructions of how to install it and how it works: https://youtu.be/F6FFj7qKfHI
+
 Sky Zoo is a set of additional advancements based on capturing hostile mobs in Minecraft Java Edition 1.15.2+. It's
 designed to be played on a skyblock map either in single player or together with friends. Currently, I recommend playing
 on DrTrog's Skyblock 4 map but it can played on any map (doesn't even need to be a skyblock map). You can downlaod the
