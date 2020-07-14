@@ -23,5 +23,5 @@ data remove storage minecraft:sky_zoo witch_reward
 data remove storage minecraft:sky_zoo wither_reward
 data remove storage minecraft:sky_zoo wither_skeleton_reward
 data remove storage minecraft:sky_zoo zombie_reward
-data remove storage minecraft:sky_zoo zombie_pigman_reward
 data remove storage minecraft:sky_zoo zombie_villager_reward
+data remove storage minecraft:sky_zoo zombified_piglin_reward

@@ -23,5 +23,5 @@ execute if data storage sky_zoo witch_reward run data modify entity @e[type=wand
 execute if data storage sky_zoo wither_reward run data modify entity @e[type=wandering_trader,limit=1] Offers.Recipes[22].maxUses set value 99999
 execute if data storage sky_zoo wither_skeleton_reward run data modify entity @e[type=wandering_trader,limit=1] Offers.Recipes[23].maxUses set value 99999
 execute if data storage sky_zoo zombie_reward run data modify entity @e[type=wandering_trader,limit=1] Offers.Recipes[24].maxUses set value 99999
-execute if data storage sky_zoo zombie_pigman_reward run data modify entity @e[type=wandering_trader,limit=1] Offers.Recipes[25].maxUses set value 99999
-execute if data storage sky_zoo zombie_villager_reward run data modify entity @e[type=wandering_trader,limit=1] Offers.Recipes[26].maxUses set value 99999
+execute if data storage sky_zoo zombie_villager_reward run data modify entity @e[type=wandering_trader,limit=1] Offers.Recipes[25].maxUses set value 99999
+execute if data storage sky_zoo zombified_piglin_reward run data modify entity @e[type=wandering_trader,limit=1] Offers.Recipes[26].maxUses set value 99999
